@@ -23,9 +23,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
-        <activity 
-            android:name="com.yul.coolweather.activity.WeatherActivity"></activity>
+        <activity android:name="com.yul.coolweather.activity.WeatherActivity" >
+        </activity>
+
+        <service android:name="com.yul.coolweather.service.AutoUpdateService" >
+        </service>
+
+        <receiver android:name="com.yul.coolweather.receiver.AutoUpdateReceiver" >
+        </receiver>
     </application>
 
 </manifest>
